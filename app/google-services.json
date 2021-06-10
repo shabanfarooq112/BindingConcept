@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "84217114902",
+    "project_id": "bindingconcept-ee341",
+    "storage_bucket": "bindingconcept-ee341.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84217114902:android:df5b5f61c3ef1d70cee037",
+        "android_client_info": {
+          "package_name": "com.example.bindingconcept"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84217114902-9hgd0prppq3s5b16fpm40eetou3ndola.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoEnCXthctfxt3cRjitULhEtVhVgq6YoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84217114902-9hgd0prppq3s5b16fpm40eetou3ndola.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

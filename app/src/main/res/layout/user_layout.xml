@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/other_user_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_image"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/other_user_profile_image"
+            android:layout_marginLeft="12dp"
+            android:padding="12dp"
+            android:background="@drawable/chat_background"
+            >
+
+            <ImageView
+                android:id="@+id/other_user_menu"
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:src="@drawable/menu_icon"
+                android:layout_alignParentRight="true"
+                ></ImageView>
+
+            <TextView
+                android:id="@+id/other_user_name"
+                android:layout_width="wrap_content"
+                android:text="Sofia"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"></TextView>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@id/other_user_name"
+                android:src="@drawable/check"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                ></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/other_user_name">
+
+                <TextView
+                    android:id="@+id/other_user_message"
+                    android:layout_width="150dp"
+                    android:text="sdfg kjk kj lj "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/other_user_name"
+                    android:textSize="18dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"></TextView>
+
+                <ImageView
+                    android:id="@+id/other_user_sent_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile_image"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/other_user_meessage_time"
+                    android:layout_width="wrap_content"
+                    android:text="3:37 PM"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/other_user_message"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:padding="12dp"
+            android:background="@drawable/chat_background"
+            >
+
+            <ImageView
+                android:id="@+id/user_menu"
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:src="@drawable/menu_icon"
+                android:layout_alignParentRight="true"
+                ></ImageView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_message"
+                    android:layout_width="150dp"
+                    android:text="sdfg kjk kj lj jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"></TextView>
+
+                <ImageView
+                    android:id="@+id/user_sent_image"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/profile_image"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/user_meessage_time"
+                    android:layout_width="wrap_content"
+                    android:text="3:37 PM"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/user_sent_image"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/other_user_audio"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/chat_background">
+
+        <ImageView
+            android:id="@+id/other_user_audio_menu"
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:src="@drawable/menu_icon"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/other_user_play"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/play_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/other_user_pause"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pause_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            ></ImageView>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/other_user_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            >
+        </androidx.appcompat.widget.AppCompatSeekBar>
+
+        <TextView
+            android:id="@+id/other_user_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other_user_seekbar"
+            android:layout_marginLeft="50dp"
+            android:textSize="12dp"
+            android:text="0:09"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/other_user_audio_time"
+            android:layout_width="wrap_content"
+            android:text="3:37 PM"
+            android:textColor="@color/black"
+            android:layout_below="@id/other_user_seekbar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/user_audio"
+        android:layout_below="@+id/other_user_audio"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chat_background">
+
+        <ImageView
+            android:id="@+id/user_audio_menu"
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:src="@drawable/menu_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/user_play"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/play_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/user_pause"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pause_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            ></ImageView>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/user_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            >
+        </androidx.appcompat.widget.AppCompatSeekBar>
+
+        <TextView
+            android:id="@+id/user_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_seekbar"
+            android:layout_marginLeft="50dp"
+            android:textSize="12dp"
+            android:text="0:09"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/user_audio_time"
+            android:layout_width="wrap_content"
+            android:text="3:37 PM"
+            android:textColor="@color/black"
+            android:layout_below="@id/user_seekbar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"></TextView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

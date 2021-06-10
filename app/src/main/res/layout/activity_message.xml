@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/app_header"
+        ></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:layout_below="@id/include"
+        android:layout_marginTop="10dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/chat_background"
+            ></RelativeLayout>
+
+        <TextView
+            android:id="@+id/cancel_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textSize="20dp"
+            android:textColor="@color/red_colour"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            ></Chronometer>
+
+        <TextView
+            android:id="@+id/send_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            ></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/chat_background"
+            ></RelativeLayout>
+
+        <ImageView
+            android:id="@+id/show_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible"
+            android:src="@drawable/right_arrow_angle"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/gallery_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/image_gallery"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/show_icon"
+            ></ImageView>
+
+
+        <ImageView
+            android:id="@+id/record_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/gallery_icon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mic"
+            android:visibility="gone" />
+
+
+
+
+        <ImageView
+            android:id="@+id/gallery_icon3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/hourglass"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/record_button"
+            ></ImageView>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/your_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_message_background"
+                android:layout_centerVertical="true"
+                android:textCursorDrawable="@color/black"
+                android:maxLines="3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/show_icon"
+                android:layout_toEndOf="@id/gallery_icon3"
+                android:layout_toStartOf="@+id/send_message"
+                android:layout_toLeftOf="@+id/send_message"
+                ></EditText>
+
+
+        <ImageView
+            android:id="@+id/send_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/send_message"
+            android:layout_marginRight="15dp"
+            ></ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

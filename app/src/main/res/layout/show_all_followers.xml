@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/include_app_header"
+        layout="@layout/app_header"
+        ></include>
+
+    <EditText
+        android:id="@+id/search_follwers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_message_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Search followers"
+        android:padding="8dp"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"></EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

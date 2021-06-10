@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:src="@drawable/yellow_circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        ></ImageView>
+    
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:translationZ="5dp"
+        android:elevation="5dp"
+        android:layout_marginTop="4.5dp"
+        android:layout_marginRight="5dp"
+        android:text="1"
+        android:gravity="center_horizontal"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="7dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/all_chat_member_list_item_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/profile_image"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Talha"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/all_chat_member_list_item_image"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        ></TextView>
+
+        <TextView
+            android:id="@+id/last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Talha"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/all_chat_member_list_item_image"
+            android:layout_below="@+id/member_name"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/all_chat_member_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="45dp"
+            android:text="10-01-2021"
+            ></TextView>
+
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
